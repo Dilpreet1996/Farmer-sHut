@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "farmer",
+    "slug": "farmer",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
