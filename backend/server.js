@@ -12,6 +12,9 @@ const messageToNumber = require('./routes/NumberRoute')
 const imageServer = require('./routes/ImageRoute')
 const productRoutes = require('./routes/ProductRoute')
 const productImageServer = require('./controllers/productImageContoller')
+const addToCart = require('./routes/AddToCartRoute')
+const orders = require('./routes/ViewOrderRoute')
+
 
 
 //middleware
@@ -26,9 +29,9 @@ app.use('/api/customerRoutes',customerRoutes)
 app.use('/api/messageToNumber',messageToNumber)
 app.use('/api/image',imageServer)
 app.use('/api/productImage',productImageServer)
-
 app.use('/api/products',productRoutes)
-
+app.use('/api/addToCart',addToCart)
+app.use('/api/order',orders)
 
 
 
