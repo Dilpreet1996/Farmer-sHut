@@ -25,6 +25,10 @@ const farmerSignUpSchema = new Schema({
     address:{
         type: String,
         required: false
+    },
+    pickup:{
+        type: String,
+        required : false
     }
 },{timestamps: true})
 
